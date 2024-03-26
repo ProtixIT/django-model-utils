@@ -7,6 +7,10 @@ To be released
   instead of `django.utils.timezone.now` - when nullable and without a default.
 - Add Brazilian Portuguese translation (GH-#578)
 - Don't use `post_init` signal for initialize tracker
+- Make `contribute_to_class()` in `StatusField`, `MonitorField` and `SplitField`
+  forward additional arguments to Django
+- Make `soft` argument to `SoftDeletableModel.delete()` keyword-only,
+  to be able to forward arguments added in Django, such as `keep_parents`
 
 4.4.0 (2024-02-10)
 ------------------
